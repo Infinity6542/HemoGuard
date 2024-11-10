@@ -1,35 +1,37 @@
 //* TESTING TENSORFLOW
-    // Define a model for linear regression. The script tag makes `tf` available
-    // as a global variable.
-    const model = tf.sequential();
-    model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+// Define a model for linear regression. The script tag makes `tf` available as a global variable.
+const model = tf.sequential();
+model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
 
-    model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+model.compile({ loss: "meanSquaredError", optimizer: "sgd" });
 
-    // Generate some synthetic data for training.
-    const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]);
-    const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]);
+// Generate some synthetic data for training.
+const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]);
+const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]);
 
-    // Train the model using the data.
-    model.fit(xs, ys, {epochs: 10}).then(() => {
-      // Use the model to do inference on a data point the model hasn't seen before:
-      model.predict(tf.tensor2d([5], [1, 1])).print();
-      // Open the browser devtools to see the output
-    });
+// Train the model using the data.
+model.fit(xs, ys, { epochs: 10 }).then(() => {
+  // Use the model to do inference on a data point the model hasn't seen before:
+  model.predict(tf.tensor2d([5], [1, 1])).print();
+  // Open the browser devtools to see the output
+});
 //* END TESTING TENSORFLOW
+// Model
 
-// Processing will be done on 192.9.187.53.
-// Send data to server
-//TODO: Figure out how to do this lmao
+// Import user provided data
 
-// Receive data from server
+// Process categorising the data
+// i.e. what type of cancer, etc.
 
-// Interpret data
-//TODO: TensorFlow.JS
+// Export
 let results = () => {
-    let output = "e";
-    // nonMaxSuppressionV3Impl.no();
-    return output;
-}
-// Pass on data
-// export default results;
+  return "e";
+};
+
+// Send off data to remote server for further processing
+// Also to add data to further train AI
+// Server located @ 192.9.187.53
+//TODO: How to do this?
+
+// Pass off the data
+export default results;
