@@ -16,11 +16,11 @@ model.fit(xs, ys, { epochs: 10 }).then(() => {
     // Open the browser devtools to see the output
 });
 //* END TESTING TENSORFLOW
-// Model
+//* Model
 
-// Import user provided data
+//* Import user provided data
 
-// Process categorising the data
+//* Process categorising the data
 // i.e. what type of cancer, etc.
 
 // Export
