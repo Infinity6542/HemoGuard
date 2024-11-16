@@ -23,28 +23,7 @@ model.fit(xs, ys, { epochs: 10 }).then(() => {
 //* Process categorising the data
 // i.e. what type of cancer, etc.
 
-// Export
-//TODO: Move this into a new file
-class Results {
-    constructor(diagnosis) {
-        this.diagnosis = null;
-    }
-    destruct() {
-        delete this.diagnosis;
-        delete this;
-    }
-    diagnose(diagnosis) {
-        if (typeof diagnosis != "string") {
-            throw new Error(
-                "[CRT] [ERR] [Dx] Invalid diagnosis value type. Expected diagnosis to be string, where diagnosis is" +
-                typeof diagnosis
-            );
-        }
-        this.diagnosis = diagnosis;
-    }
-}
-
-// Send off data to remote server for further processing
+//* Send off data to remote server for further processing
 // Also to add data to further train AI
 // Server located @ 192.9.187.53
 //TODO: How to do this?
