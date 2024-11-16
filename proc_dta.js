@@ -36,7 +36,7 @@ class Results {
     diagnose(diagnosis) {
         if (typeof diagnosis != "string") {
             throw new Error(
-                "[CRT] [ERR] [Dx] Invalid diagnosis. Expected diagnosis to be string, where diagnosis is" +
+                "[CRT] [ERR] [Dx] Invalid diagnosis value type. Expected diagnosis to be string, where diagnosis is" +
                 typeof diagnosis
             );
         }
