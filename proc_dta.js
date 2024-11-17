@@ -1,3 +1,4 @@
+import Results from Results.js;
 //* TESTING TENSORFLOW
 // Define a model for linear regression. The script tag makes `tf` available as a global variable.
 const model = tf.sequential();
