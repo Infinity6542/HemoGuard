@@ -12,3 +12,4 @@ if (typeof results.diagnosis != "string") {
 }
 
 // Pass off the data
+export default results;
