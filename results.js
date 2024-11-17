@@ -1,8 +1,10 @@
 class Results {
     constructor(diagnosis) {
         this.diagnosis = null;
+        this.items = [];
     }
     destruct() {
+        delete this.items;
         delete this.diagnosis;
         delete this;
     }
@@ -14,5 +16,14 @@ class Results {
             );
         }
         this.diagnosis = diagnosis;
+    }
+    append(item) {
+        if (typeof item != "string") {
+            throw new Error(
+                "[CRT] [ERR] [Dx] Invalid item value type. Expected item to be string, where item is" +
+                typeof item
+            );
+        }
+        this.items.push(item);
     }
 }
