@@ -1,0 +1,36 @@
+header {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navCont {
+	display: flex;
+	flex-direction: row;
+	height: 47px;
+	width: auto;
+}
+
+.navCont > ul {
+	--gapSize: 49px;
+	display: flex;
+	flex-direction: row;
+	padding-left: var(--gapSize);
+	gap: var(--gapSize);
+}
+
+nav ul > li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.logoFullHori img {
+	border-radius: 7px;
+}
+
+.logoFullHori {
+	height: 47px;
+	width: 164px;
+}
