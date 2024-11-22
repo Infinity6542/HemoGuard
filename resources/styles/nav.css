@@ -48,3 +48,8 @@ nav ul > li {
 	height: 47px;
 	width: 164px;
 }
+
+nav a {
+	text-decoration: none;
+	color: var(--text) !important;
+}
