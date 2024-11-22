@@ -8,10 +8,15 @@
 	src: url("/resources/fonts/satoshi/Fonts/Variable/Satoshi-Variable.ttf");
 }
 
+@font-face {
+	font-family: "Fira Code";
+	src: url("/resources/fonts/firaCode/FiraCode-VariableFont_wght.ttf");
+}
+
 :root {
-	--background: #06162e;
+	--background: #00060F;
 	--accent: #194484;
-	--secondary: #06162e;
+	--secondary: #06162E;
 	--tertiary: #3868b0;
 	--text: #f5f6ff;
 	--affirmative: #0fb200;
@@ -21,7 +26,7 @@
 header,
 body {
 	font-family: "Plus Jakarta Sans";
-	color: var(--text);
+	color: var(--text) !important;
 	background: var(--background);
 }
 
@@ -34,7 +39,41 @@ h1 {
 	font-weight: medium;
 }
 
-h3 {
+h2 {
 	font-family: "Plus Jakarta Sans";
 	font-weight: bold;
+}
+
+h3 {
+	font-family: "Fira Code";
+	font-weight: bold;
+}
+
+.primary, .secondary {
+	height: 70px;
+	width: 225px;
+	border-radius: 10px;
+	font-family: "Plus Jakarta Sans";
+	font-size: 27px;
+	color: var(--text);
+	border: none;
+}
+
+.primary {
+	background: var(--accent);
+}
+
+.secondary {
+	background: var(--secondary);
+}
+
+.radial-1000 {
+	--size: 1000px;
+	height: var(--size);
+	width: var(--size);
+	border-radius: 50%;
+}
+
+.accentRadial {
+	background: radial-gradient(circle at center, var(--accent), black);
 }
