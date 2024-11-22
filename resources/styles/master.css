@@ -1,9 +1,40 @@
 @font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url("/resources/fonts/plusJakartaSans/PlusJakartaSans-VariableFont_wght.ttf");
+	font-family: "Plus Jakarta Sans";
+	src: url("/resources/fonts/plusJakartaSans/PlusJakartaSans-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: 'Satoshi';
-    src: url("/resources/fonts/satoshi/Fonts/Variable/Satoshi-Variable.ttf");
+	font-family: "Satoshi";
+	src: url("/resources/fonts/satoshi/Fonts/Variable/Satoshi-Variable.ttf");
+}
+
+:root {
+	--background: #06162e;
+	--accent: #194484;
+	--secondary: #06162e;
+	--tertiary: #3868b0;
+	--text: #f5f6ff;
+	--affirmative: #0fb200;
+	--negative: #f12b2b;
+}
+
+header,
+body {
+	font-family: "Plus Jakarta Sans";
+	color: var(--text);
+	background: var(--background);
+}
+
+h1,
+h2 {
+	font-family: "Satoshi";
+}
+
+h1 {
+	font-weight: medium;
+}
+
+h3 {
+	font-family: "Plus Jakarta Sans";
+	font-weight: bold;
 }

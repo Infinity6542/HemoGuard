@@ -1,23 +1,37 @@
 header {
-	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 150px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+.nav {
+    padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px var(--accent) solid;
+	border-radius: 10px;
+}
+
 .navCont {
 	display: flex;
 	flex-direction: row;
-	height: 47px;
-	width: auto;
+	align-items: center;
 }
 
 .navCont > ul {
-	--gapSize: 49px;
+	--gapSize: 35px;
+    font-size: 20px;
 	display: flex;
 	flex-direction: row;
+	margin: 0;
 	padding-left: var(--gapSize);
+    padding-right: calc(var(--gapSize) - 30px);
 	gap: var(--gapSize);
 }
 
