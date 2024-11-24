@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1076 321">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: PlusJakartaSans-Bold, 'Plus Jakarta Sans';
+        font-size: 212.91px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="62.92" y1="160.68" x2="1076.45" y2="160.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".97" stop-color="#00060f"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="M62.92,110.22v7.25c.26,0,.5-.04.76-.04,28.37,0,51.37,23,51.37,51.37s-23,51.37-51.37,51.37c-.26,0-.51-.03-.76-.04v11.02l1013.53,90.22V0L62.92,110.22Z"/>
+  <text class="cls-1" transform="translate(-7.08 228.6)"><tspan x="0" y="0">o</tspan></text>
+</svg>

@@ -41,12 +41,18 @@ nav ul > li {
 }
 
 .logoFullHori img {
-	border-radius: 7px;
+	margin-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .logoFullHori {
 	height: 47px;
 	width: 164px;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 nav a {
