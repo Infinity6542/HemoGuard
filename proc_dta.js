@@ -104,7 +104,7 @@ const testCategoryYFloat = tf.cast(testCategoryY, "float32");
             trainXFloat,
             { dangerLevel: trainDangerYFloat, category: trainCategoryYFloat },
             {
-                epochs: 100,
+                epochs: 1000,
                 validationData: [
                     testXFloat,
                     { dangerLevel: testDangerYFloat, category: testCategoryYFloat },
