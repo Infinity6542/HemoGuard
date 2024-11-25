@@ -7,7 +7,9 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="/resources/styles/master.css" />
 		<link rel="stylesheet" href="/resources/styles/nav.css" />
-		<link rel="stylesheet" href="/resources/styles/about.css" />
+		<link rel="stylesheet" href="/resources/styles/prototype.css" />
+        <!-- Scripts -->
+         <script src="/handleImport.js"></script>
 	</head>
 	<header>
 		<nav>
@@ -29,6 +31,13 @@
 		</nav>
 	</header>
 	<body>
-
+		<label for="input">Try it out</label>
+		<div id="dropZone" ondrop="handleDrop(event);" ondragover="handleHoverOver(e);">
+			<img
+				src="/resources/img/ico/cloud-upload.svg"
+				alt="Upload icon"
+			/>
+			<p>Upload your file</p>
+		</div>
 	</body>
 </html>

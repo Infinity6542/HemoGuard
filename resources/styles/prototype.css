@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#dropZone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 50vw;
+    outline: 8px solid #06162e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 50%; */
+}
+
+#dropZone > * {
+    color: #173766;
+}
+
+#dropZone img {
+    position: relative;
+    height: 40%;
+    width: 40%;
+}
+
+#dropZone p {
+    font-size: 30px;
+    transform: translate(0, -100%);
+}

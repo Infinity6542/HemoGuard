@@ -28,6 +28,7 @@ body {
 	font-family: "Plus Jakarta Sans";
 	color: var(--text) !important;
 	background: var(--background);
+	position: relative;
 }
 
 h1,
