@@ -87,3 +87,6 @@ h3 {
 	background: radial-gradient(circle at center, var(--accent) 0%, var(--background) 80%);
 }
 
+button {
+	cursor: pointer;
+}

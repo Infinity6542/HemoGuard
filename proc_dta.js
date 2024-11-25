@@ -1,4 +1,5 @@
 import data from "./dta.js";
+import proc_input from "./handleImport.js";
 if (localStorage.getItem("model") === null) {
 const categoryMapping = {};
 let categoryIndex = 0;
@@ -83,12 +84,6 @@ model.compile({
 	},
 });
 
-// Why is this not in goddamn float
-// F***
-// WHY IS THIS NOT WORKING
-// WORK YOU SON OF A B****
-// Ah well here is float
-// Floating in the clouds... Wishing I never learnt JS
 const testXFloat = tf.cast(testX, "float32");
 const trainXFloat = tf.cast(trainX, "float32");
 const trainDangerYFloat = tf.cast(trainDangerY, "float32");
