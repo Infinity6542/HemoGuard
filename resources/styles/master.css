@@ -67,13 +67,23 @@ h3 {
 	background: var(--secondary);
 }
 
+.bg {
+	background: var(--background);
+}
+
+.radial {
+	z-index: 0;
+}
+
 .radial-1000 {
 	--size: 1000px;
 	height: var(--size);
 	width: var(--size);
+	opacity: 30%;
 	border-radius: 50%;
 }
 
 .accentRadial {
-	background: radial-gradient(circle at center, var(--accent), black);
+	background: radial-gradient(circle at center, var(--accent) 0%, var(--background) 80%);
 }
+

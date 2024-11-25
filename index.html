@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HemoGuard</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="/resources/styles/master.css" />
+		<link rel="stylesheet" href="/resources/styles/index.css" />
+		<!-- TF -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+		<!-- Other scripts -->
+		<script type="module" src="/handleImport.js" defer></script>
+		<script type="module" src="/proc_dta.js" defer></script>
+		<script type="module" src="/handleExport.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HemoGuard</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/resources/styles/master.css" />
-    <!-- TF -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <!-- Other scripts -->
-    <script type="module" src="/handleImport.js" defer></script>
-    <script type="module" src="/proc_dta.js" defer></script>
-    <script type="module" src="/handleExport.js" defer></script>
-</head>
-
-<body>
-    <div class="bg">
-        <div class="container">
-            <div class="title">
-                <p>Welcome to</p>
-                <h1>HemoGuard</h1>
-                <p>a Prospective app</p>
-            </div>
-        </div>
-        <div class="explore">
-            <button class="secondary" type="button">Learn more</button>
-            <button class="primary" type="button">Let's begin</button>
-        </div>
-        <div class="radial-1000 accentRadial"></div>
-    </div>
-</body>
-
+	<body>
+		<div class="bg">
+			<div class="content">
+				<div class="container">
+					<div class="title">
+						<span>Welcome to</span>
+						<h1>HemoGuard</h1>
+						<span class="byPros"
+							>a
+							<img
+								src="/resources/img/logo/Prospective_Full.png"
+								alt="Prospective"
+							/>
+							app.</span
+						>
+					</div>
+				</div>
+				<div class="explore">
+					<a href="/about.html"
+						><button class="secondary" type="button">Learn more</button></a
+					>
+					<a href="/prototype.html">
+						<button class="primary" type="button">Let's begin</button></a
+					>
+				</div>
+			</div>
+			<div class="radial radial-1000 accentRadial homeRadial"></div>
+		</div>
+	</body>
 </html>

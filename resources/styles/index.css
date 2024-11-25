@@ -1,0 +1,57 @@
+html, body {
+    overflow-y: hidden;
+}
+
+.homeRadial {
+    position: absolute;
+    top: 35%;
+    left: -25%;
+}
+
+.content {
+    position: relative;
+    top: 6em;
+    left: 10em;
+    height: calc(100vh - 12em);
+    width: calc(100vw - 12em);
+}
+
+.explore {
+    position: relative;
+    top: 35%;
+    z-index: 1;
+}
+
+.content .title {
+    position: relative;
+    z-index: 1;
+}
+
+.content h1 {
+    font-weight: 500;
+    font-size: 8em;
+    margin: 0;
+}
+
+.content span {
+    position: relative;
+    margin: 0;
+    left: .5rem;
+}
+
+.content span:nth-child(1) {
+    font-size:3em;
+    top: .8em;
+}
+
+.byPros {
+    bottom: 2em;
+}
+
+.title img {
+    position: relative;
+    top: .4em;
+    height: 1.5em;
+    margin-left: .5em;
+    margin-right: .5em;
+}

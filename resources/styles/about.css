@@ -1,0 +1,6 @@
+.content > img {
+    --size: 200px;
+    height: var(--size);
+    width: var(--size);
+    filter: invert(88%) sepia(18%) saturate(206%) hue-rotate(200deg) brightness(103%) contrast(106%);
+}

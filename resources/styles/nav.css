@@ -7,15 +7,18 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: none;
 }
 
 .nav {
+	position: relative;
     padding: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 2px var(--accent) solid;
 	border-radius: 10px;
+	animation: onLoad 2s ease-out;
 }
 
 .navCont {
@@ -58,4 +61,13 @@ nav ul > li {
 nav a {
 	text-decoration: none;
 	color: var(--text) !important;
+}
+
+@keyframes onLoad {
+	from {
+		bottom: 10em;
+	}
+	to {
+		bottom: 0em;
+	}
 }
