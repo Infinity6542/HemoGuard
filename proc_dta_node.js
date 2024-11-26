@@ -1,7 +1,11 @@
 import data from "./dta.js";
-import * as tf from '@tensorflow/tfjs-node'
+import * as tf from '@tensorflow/tfjs-node-gpu'
 const categoryMapping = {};
 let categoryIndex = 0;
+
+tf.setBackend('cpu');
+console.log(tf.getBackend());
+
 
 data.forEach((item) => {
 	if (!(item.category in categoryMapping)) {
@@ -98,7 +102,7 @@ const testCategoryYFloat = tf.cast(testCategoryY, "float32");
             trainXFloat,
             { dangerLevel: trainDangerYFloat, category: trainCategoryYFloat },
             {
-                epochs: 1000,
+                epochs: 9999999999999999999999999999999999999999999999999999999999,
                 validationData: [
                     testXFloat,
                     { dangerLevel: testDangerYFloat, category: testCategoryYFloat },

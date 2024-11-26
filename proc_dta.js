@@ -1,5 +1,5 @@
 import data from "./dta.js";
-import proc_input from "./handleImport.js";
+let proc_input = JSON.parse(localStorage.getItem("data"));
 if (localStorage.getItem("model") === null) {
 const categoryMapping = {};
 let categoryIndex = 0;
@@ -99,7 +99,7 @@ const testCategoryYFloat = tf.cast(testCategoryY, "float32");
             trainXFloat,
             { dangerLevel: trainDangerYFloat, category: trainCategoryYFloat },
             {
-                epochs: 1000,
+                epochs: 99999999999999999999999,
                 validationData: [
                     testXFloat,
                     { dangerLevel: testDangerYFloat, category: testCategoryYFloat },
