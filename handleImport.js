@@ -6,11 +6,14 @@ const reader = new FileReader();
 console.log("Reader created");
 console.log("State of reader is currently " + reader.readyState);
 
+// Called in DOM ondragover
 function handleHoverOver(event) {
 	event.preventDefault();
+    // Just to make sure there's nothing else
     localStorage.clear();
 }
 
+// Called in DOM ondrop
 async function handleDrop(e) {
 	e.preventDefault();
 	console.log("[INP] [DTA] File received.");
@@ -46,10 +49,8 @@ async function handleDrop(e) {
             return obj;
           });
           let data = JSON.stringify(obj);
+          // JSON.parse() when using it
           localStorage.setItem("data", data);
 		// };
 	}
 }
-
-// Pass off the data
-// export default data;
