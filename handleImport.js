@@ -24,6 +24,7 @@ async function handleDrop(e) {
 		console.error("[INP] [DTA] Invalid file type. -1.");
 		window.alert("Please upload a .txt file.");
 	} else {
+		document.querySelector("#dropZone > p").innerHTML = "Analysing file...";
 		console.log(reader.readyState);
 		console.log("[SRT] [VAL] [INP] [DTA] File validated. Checking contents...");
 		// reader.onload = () => {
@@ -53,6 +54,11 @@ async function handleDrop(e) {
 		let data = JSON.stringify(obj);
 		// JSON.parse() when using it
 		localStorage.setItem("data", data);
+		document.querySelector("#dropZone > p").innerHTML = "File accepted! Redirecting...";
+		document.querySelector(".nav").classList.remove("navOn");
+		document.querySelector(".nav").classList.add("navOff");
+		await sleep(1300);
+		window.location.href = "result.html";
 		// };
 	}
 }

@@ -18,7 +18,14 @@ header {
 	align-items: center;
 	border: 2px var(--accent) solid;
 	border-radius: 10px;
+}
+
+.navOn {
 	animation: onLoad 2s ease-out;
+}
+
+.navOff {
+	animation: offLoad 2s ease-out;
 }
 
 .navCont {
@@ -69,5 +76,14 @@ nav a {
 	}
 	to {
 		bottom: 0em;
+	}
+}
+
+@keyframes offLoad {
+	from {
+		bottom: 0em;
+	}
+	to {
+		bottom: 10em;
 	}
 }
