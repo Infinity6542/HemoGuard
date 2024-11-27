@@ -42,3 +42,5 @@ class Results {
         this.diagnosis.push(diagnosis.name);
     }
 }
+
+export default Results;

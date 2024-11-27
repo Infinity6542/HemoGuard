@@ -33,3 +33,41 @@ body {
     font-size: 30px;
     transform: translate(0, -100%);
 }
+
+.content * {
+    text-align: center;
+    align-items: center;
+    animation: load ease-out 2s;
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.continue {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.post h2 {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.post h3 {
+    margin-bottom: 1em;
+}
+
+#result {
+    margin-top: 4em;
+    margin-bottom: 10em;
+}

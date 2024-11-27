@@ -91,3 +91,15 @@ h3 {
 button {
 	cursor: pointer;
 }
+
+.hidden {
+	display: none;
+}
+
+.negative {
+	color: var(--negative);
+}
+
+.positive {
+	color: var(--affirmative);
+}
