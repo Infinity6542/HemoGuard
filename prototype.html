@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="/resources/styles/master.css" />
 		<link rel="stylesheet" href="/resources/styles/nav.css" />
 		<link rel="stylesheet" href="/resources/styles/prototype.css" />
-        <!-- Scripts -->
-         <script src="/handleImport.js"></script>
+		<!-- Scripts -->
+		<script src="/handleImport.js"></script>
 	</head>
 	<header>
 		<nav>
@@ -31,13 +31,26 @@
 		</nav>
 	</header>
 	<body>
-		<label for="input" style="position: absolute; font-size: 4em; top: 15%; left: 50%; transform: translate(-50%, 0);">Try it out</label>
-		<div id="dropZone" ondrop="handleDrop(event);" ondragover="handleHoverOver(event);">
-			<img
-				src="/resources/img/ico/cloud-upload.svg"
-				alt="Upload icon"
-			/>
-			<p>Upload your file</p>
+		<div class="content">
+			<label
+				for="input"
+				style="
+					position: absolute;
+					font-size: 4em;
+					top: 15%;
+					left: 50%;
+					transform: translate(-50%, 0);
+				"
+				>Try it out</label
+			>
+			<div
+				id="dropZone"
+				ondrop="handleDrop(event);"
+				ondragover="handleHoverOver(event);"
+			>
+				<img src="/resources/img/ico/cloud-upload.svg" alt="Upload icon" />
+				<p>Upload your file</p>
+			</div>
 		</div>
 	</body>
 </html>
