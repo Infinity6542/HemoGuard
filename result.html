@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About HemoGuard</title>
+		<!-- Styles -->
+		<link rel="stylesheet" href="/resources/styles/master.css" />
+		<link rel="stylesheet" href="/resources/styles/nav.css" />
+		<link rel="stylesheet" href="/resources/styles/prototype.css" />
+		<!-- Scripts -->
+		<script src="/proc_dta.js" type="module"></script>
+		<!-- TF -->
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+	</head>
+	<header>
+		<nav>
+			<div class="nav navOn">
+				<div class="navCont">
+					<div class="logoFullHori">
+						<img
+							src="/resources/img/logo/HG_Full_Contrast.svg"
+							alt="HemoGuard full logo"
+						/>
+					</div>
+					<ul>
+						<li><a href="/about.html">About</a></li>
+						<li><a href="/team.html">Team</a></li>
+						<li><a href="/prototype.html">Prototype</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<body>
+		<div class="content">
+			<div class="warm">
+				<h2>Processing...</h2>
+				<p>Our AI is analyzing the data you provided.</p>
+			</div>
+			<div class="post hidden">
+				<h3>Results</h3>
+				<h2>
+					Our AI has detected <span id="count"></span> anomalies in the
+					collected sample.
+				</h2>
+				<p id="result"></p>
+				<div class="continue">
+					<a href="/about.html">
+						<button class="primary" type="button">Learn more</button></a
+					>
+					<a href="/prototype.html">
+						<button class="secondary" type="button">Try again</button></a
+					>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
