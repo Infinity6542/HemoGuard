@@ -20,13 +20,13 @@ async function handleDrop(e) {
 	if (e.dataTransfer.files.length > 1) {
 		console.error("[INP] [DTA] Multiple files uploaded. -1.");
 		window.alert("Please upload only one file at a time.");
-	} else if (e.dataTransfer.files[0].type != "text/plain") {
+	} else if (e.dataTransfer.files[0].type != "text/csv") {
 		console.error("[INP] [DTA] Invalid file type. -1.");
-		window.alert("Please upload a .txt file.");
+		window.alert("Please upload a .csv file.");
 	} else {
 		document.querySelector("#dropZone > p").innerHTML = "Analysing file...";
 		console.log(reader.readyState);
-		console.log("[SRT] [VAL] [INP] [DTA] File validated. Checking contents...");
+		console.log("[SRT] [VAL] [INP] [DTA] File validated. Storing...");
 		// reader.onload = () => {
 		console.log("State of reader is currently " + reader.readyState);
 		reader.readAsText(e.dataTransfer.files[0]);
@@ -39,19 +39,7 @@ async function handleDrop(e) {
 		// Time wasted on this: 1hr
 		await sleep(500);
 		console.log("State of reader is currently " + reader.readyState);
-		let raw = reader.result.toString();
-		let cells = raw.split("\n").map(function (el) {
-			return el.split(/\s+/);
-		});
-		let headings = cells.shift();
-		let obj = cells.map(function (el) {
-			var obj = {};
-			for (var i = 0, l = el.length; i < l; i++) {
-				obj[headings[i]] = isNaN(Number(el[i])) ? el[i] : +el[i];
-			}
-			return obj;
-		});
-		let data = JSON.stringify(obj);
+		let data = reader.result.toString();
 		// JSON.parse() when using it
 		localStorage.setItem("data", data);
 		document.querySelector("#dropZone > p").innerHTML = "File accepted! Redirecting...";
@@ -62,3 +50,5 @@ async function handleDrop(e) {
 		// };
 	}
 }
+
+export default data;

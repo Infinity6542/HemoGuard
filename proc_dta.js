@@ -1,4 +1,4 @@
-import data from "./dta.js";
+import data from "./handleImport.js";
 import Results from "./results.js";
 let proc_input = JSON.parse(localStorage.getItem("data"));
 if (localStorage.getItem("model") == null) {
